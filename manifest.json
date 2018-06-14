@@ -1,5 +1,4 @@
 {
-
   "description": "Listens on a closed pull request and sends the description to the related redmine ticket.",
   "manifest_version": 2,
   "name": "PullRequest → Redmine",
@@ -8,10 +7,13 @@
   "icons": {
     "48": "icons/pullrequest.png"
   },
-
+  "options_page": "settings.html",
   "background": {
-      "scripts": ["listener.js"],
-      "persistent": false
-    },
+    "scripts": ["scripts/listener.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "storage"
+  ]
 
 }

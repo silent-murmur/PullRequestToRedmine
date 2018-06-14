@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PullRequest to Redmine Settings</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style/style.css" media="screen"/>
+</head>
+<body>
+<section id="content">
+    <h1>PullRequest to Redmine Settings</h1>
+
+    <fieldset class="form-group">
+        <legend>Github Credentials</legend>
+        <div class="form-group">
+            <label for="github_username">Username:</label>
+            <input type="text" class="form-control" id="github_username">
+        </div>
+        <div class="form-group">
+            <label for="github_api_key">Api Key:</label>
+            <input type="text" class="form-control" id="github_api_key">
+        </div>
+    </fieldset>
+
+    <fieldset class="form-group">
+        <legend>Redmine Credentials</legend>
+        <div class="form-group">
+            <label for="redmine_username">Username:</label>
+            <input type="text" class="form-control" id="redmine_username">
+        </div>
+        <div class="form-group">
+            <label for="redmine_api_key">Api Key:</label>
+            <input type="text" class="form-control" id="redmine_api_key">
+        </div>
+    </fieldset>
+
+    <div id="status"></div>
+    <button id="save">Save</button>
+</section>
+<script src="scripts/settings.js"></script>
+</body>
+</html>
