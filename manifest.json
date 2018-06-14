@@ -1,0 +1,17 @@
+{
+
+  "description": "Listens on a closed pull request and sends the description to the related redmine ticket.",
+  "manifest_version": 2,
+  "name": "PullRequest → Redmine",
+  "version": "1.0",
+  "homepage_url": "https://github.com/silent-murmur/PullRequestToRedmine",
+  "icons": {
+    "48": "icons/pullrequest.png"
+  },
+
+  "background": {
+      "scripts": ["listener.js"],
+      "persistent": false
+    },
+
+}
